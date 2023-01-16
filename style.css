@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-image: url('../images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 70px;
+    display: grid;
+    grid-template-areas: 
+    'logo logo logo logo'
+    'ilus ilus ilus cont'
+    ;
+}
+.logo{
+    grid-area: logo;
+}
+
+.ilustration{
+    grid-area: ilus;
+    width: 50vw;
+}
+.ilustration img{
+    width: 100%;
+}
+
+.content{
+    color: #fff;
+    grid-area: cont;
+    padding: 40px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.content button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0px 0px 8px #000;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.content button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+}
+.icons div{
+    margin: 0 5px
+}
+.icons .fb{
+    
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+}
+.icons .in{
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+}
+.icons .tw{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+}
+.icons .fb:hover,.icons .in:hover, .icons .tw:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+}
+.icons .fb svg{   
+    width: 20px;
+}
+.icons .in svg{   
+    width: 25px;
+}
+.icons .tw svg{
+    width: 25px;
+}
+
+.icons .fb svg path{   
+    fill: #fff;
+}
+.icons .in svg path{   
+    fill: #fff;
+}
+.icons .tw svg path{
+    fill: #fff;
+}
+
+.icons .fb svg:hover path{   
+    fill: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.icons .in svg:hover path{   
+    fill: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.icons .tw svg:hover path{
+    fill: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    .container{
+        height: 100%;
+        padding: 30px;
+        grid-template-areas: 
+        'logo logo'
+        'ilus ilus'
+        'cont cont'
+        ;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .ilustration{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .content div{
+        text-align: center;
+    }
+    .icons{
+        margin-top: 50px;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+    .content p{
+        font-size: 18px;
+    }
+}
